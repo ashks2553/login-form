@@ -1,0 +1,120 @@
+/* CSS RESET */
+:root {
+    --mainColor: whitesmoke;
+    --darkColor: #333;
+    --lightColor: lightgrey;
+    --redColor: brown;
+    --btnColor: seagreen;
+
+}
+
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.7rem;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -------------------------------------- */
+
+.heading {
+    font-size: 2.4em;
+    color: var(--darkColor);
+    text-transform: capitalize;
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
+
+.row {
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    margin: 30px 0 35px 150px;
+    position: relative;
+}
+
+form {
+    width: 34rem;
+    height: 25rem;
+    text-align: center;
+    background-color: var(--mainColor);
+    border-radius: 12px;
+    box-shadow: 4px 5px 7px var(--lightColor);
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    color: var(--redColor);
+    font-size: 15px;
+    background-color: transparent;
+    border: 1px solid var(--darkColor);
+    border-radius: 18px;
+    outline: none;
+    padding: 0 15px;
+}
+
+button {
+    width: 84px;
+    height: 34px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: var(--mainColor);
+    background-color: var(--btnColor);
+    box-shadow: 4px 5px 7px var(--lightColor);
+    text-shadow: 3px 2px 5px darkgreen;
+    margin-top: 8px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#user::before {
+    content: "username";
+    position: absolute;
+    top: -13px;
+    left: 76px;
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: var(--mainColor);
+    padding: 0 6px;
+}
+
+#pass::before {
+    content: "password";
+    position: absolute;
+    top: -13px;
+    left: 76px;
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: var(--mainColor);
+    padding: 0 6px;
+}
+
+#pass span {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    cursor: pointer;
+}
+
+.footer {
+    position: absolute;
+    bottom: 20px;
+    font-size: 18px;
+    color: var(--darkColor);
+}
+
+.footer a {
+    color: var(--redColor);
+    text-decoration: underline;
+    cursor: pointer;
+}
